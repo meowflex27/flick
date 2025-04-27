@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowflex - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+@font-face {
+    font-family: 'Firlest';
+    src: url('Firlest-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('LemonMilk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mouser O';
+    src: url('Mouser_o.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lemon Milk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Lemon Milk', cursive;
+  font-size: 30px;
+  color: #00FF00;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+nav .logo .logo-img {
+  height: 40px;
+}
+
+nav .logo .logo-text {
+  line-height: 1;
+}
+
+/* Mobile view (screen width less than 600px) */
+@media (max-width: 600px) {
+  nav .logo {
+    font-size: 18px; /* Smaller text */
+    gap: 5px; /* Slightly less space */
+  }
+
+  nav .logo .logo-img {
+    height: 28px; /* Smaller logo image */
+  }
+}
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+nav .search-bar-container {
+    position: relative;
+    width: 50%; /* Adjust width */
+}
+
+nav .search-bar {
+	font-family: 'Anton', sans-serif; 
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Existing search button styles */
+nav .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+nav .search-button img {
+    width: 30px;  /* Adjust the size of the icon */
+    height: 30px;
+}
+
+nav .search-button:hover {
+    background-color: #555;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    nav .search-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    nav .search-button img {
+        width: 18px;  /* Smaller icon size for mobile */
+        height: 18px;
+		margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .search-button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    nav .search-button img {
+        width: 20px;  /* Even smaller icon size for very small screens */
+        height: 20px;
+    }
+}
+
+
+.clear-button {
+    position: absolute;
+    right: 40px; /* Adjust based on the input field's size */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    display: none; /* Hidden by default */
+}
+
+.clear-button:hover {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    nav .search-bar-container {
+        width: 90%; /* Full width on mobile */
+        margin: 0 auto; /* Center the search bar */
+    }
+
+    nav .search-bar {
+        font-size: 12px; /* Reduce font size */
+        padding: 8px; /* Adjust padding */
+        width: 70%;
+		margin-left: 7px;
+		height: 12px;
+    }
+
+    nav .search-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    nav .clear-button {
+        font-size: 14px;
+    }
+}
+
+/* Default Desktop Navigation */
+nav .menu {
+    display: flex;
+    gap: 20px;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+	font-size: 20px;
+}
+
+.menu a:hover {
+    color: #00FF00; 
+	text-shadow: 2px 2px 0px black, -2px -2px 0px black, -2px 2px 0px black, 2px -2px 0px black;
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        font-size: 15px; /* Smaller font size for mobile */
+        padding: 10px; /* Adjust padding for better touch experience */
+    }
+}
+
+/* Burger Icon */
+nav .burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #00FF00;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    /* Hide menu items on mobile */
+    nav .menu {
+        display: none; /* Initially hide menu */
+        flex-direction: column; /* Stack the items vertically */
+        gap: 10px;
+        font-size: 14px;   
+
+    }	
+/* Hover effect */
+nav .menu a.hovered, nav .menu a:hover {
+  background-color: #007BFF; /* Blue on hover */
+  color: 
+}
+
+    /* Display the burger icon on mobile */
+    nav .burger {
+        display: block; /* Show the burger icon */
+		
+    }
+
+    /* When burger is clicked, show the menu */
+    nav.open .menu {
+        display: flex; /* Show the menu */
+    }
+}
+        .tv-show-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+/* For mobile view, with a max-width of 768px */
+@media (max-width: 768px) {
+
+    /* Make the burger icon visible */
+    nav .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Hide the menu by default */
+nav .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;  /* No space between items */
+    background-color: #0a0a0f;  /* Customize the color */
+    position: absolute;
+    top: 60px;  /* Adjust based on your top nav height */
+    right: 0;
+    width: 25%;
+    padding: 0;  /* Remove padding inside the menu */
+    z-index: 1000;
+	border-bottom-left-radius: 10px; 
+}
+
+    /* When the menu is active, show it */
+    nav .menu.active {
+        display: flex;
+    }
+
+
+    /* Adjust the search bar container size */
+    nav .search-bar-container {
+        width: 40%;
+    }
+
+    /* Style the links inside the menu */
+    nav .menu a {
+        text-decoration: none;
+        color: #ffcc00;
+        padding: 10px 20px;
+        display: block;
+        text-align: right;
+    }
+	@media screen and (max-width: 768px) {
+    nav .menu a {
+        padding: 10px 15px;
+    }
+
+  }
+}
+
+    </style>
+
+</head>
+<body>
+    <nav>
+<div class="logo">
+  <img src="android-chrome-512x512.png" alt="Meowflex Logo" class="logo-img">
+  <span class="logo-text">Meowflex</span>
+</div>
+
+
+<div class="search-bar-container">
+    <input type="text" class="search-bar" id="search-bar" placeholder="Search movies, or TV shows...">
+    <button class="search-button" id="search-button">
+        <img src="search.png" alt="Search" class="search-icon">
+    </button>
+    <button class="clear-button" onclick="clearSearchInput()">×</button>
+    <div id="suggestions-container" class="suggestions-container"></div>
+</div>
+
+
+        <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="tvshows.html">TV Shows</a>
+			<a href="korean.html">Korean</a>
+			<a href="pmovies.html">Pinoy Movies</a>
+        </div>
+    </nav>
+	
+<!-- Trending Movies Section -->
+<div class="carousel-section">
+    <h2>Trending Movies</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="trending-movies">
+            <!-- Trending movies will be loaded here via JavaScript -->
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('trending-movies', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('trending-movies', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<!-- Trending TV Shows Section -->
+<div class="carousel-section">
+    <h2>Trending TV Shows</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="trending-tv-shows">
+            <!-- Trending TV shows will be loaded here via JavaScript -->
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('trending-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('trending-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Netflix Trending Movies</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="trending-netflix-movies">
+            <!-- Trending Netflix movies will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('trending-netflix-movies', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('trending-netflix-movies', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<div class="carousel-section">
+    <h2>Netflix Trending TV Shows</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="trending-netflix-tv-shows">
+            <!-- Trending Netflix TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('trending-netflix-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('trending-netflix-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<!-- Top 10 Movies on HBO -->
+<div class="carousel-section">
+    <h2>HBO Top 10 Movies</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-hbo-movies">
+            <!-- Top 10 HBO movies will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-hbo-movies', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-hbo-movies', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<!-- Top 10 TV Shows on HBO -->
+<div class="carousel-section">
+    <h2>HBO Top 10 TV Shows</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-hbo-tv-shows">
+            <!-- Top 10 HBO TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-hbo-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-hbo-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<!-- Top 10 Movies on Disney -->
+<div class="carousel-section">
+    <h2>Disney Top 10 Movies</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-disney-movies">
+            <!-- Top 10 Disney movies will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-disney-movies', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-disney-movies', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<!-- Top 10 TV Shows on Disney -->
+<div class="carousel-section">
+    <h2>Disney Top 10 TV Shows</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-disney-tv-shows">
+            <!-- Top 10 Disney TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-disney-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-disney-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<div class="carousel-section">
+    <h2>Amazon Prime Top 10 Movies</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-amazon-movies">
+            <!-- Top 10 Amazon Prime Movies will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-amazon-movies', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-amazon-movies', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Amazon Prime Top 10 TV Shows</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-amazon-tv-shows">
+            <!-- Top 10 Amazon Prime TV Shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-amazon-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-amazon-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<div class="carousel-section">
+    <h2>Apple TV+ Top 10 Movies</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-apple-movies">
+            <!-- Top 10 Apple TV+ Movies will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-apple-movies', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-apple-movies', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Apple TV+ Top 10 TV Shows</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="top-apple-tv-shows">
+            <!-- Top 10 Apple TV+ TV Shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('top-apple-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('top-apple-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+
+     <!-- Search Results Section -->
+    <div class="search-results-container" id="search-results">
+        <!-- Search results for Movies and TV Shows will be displayed here -->
+    </div>
+<button id="backToTop" class="back-to-top">↑ Top</button>
+
+<script>
+const searchInput = document.getElementById('search-bar');
+const clearButton = document.querySelector('.clear-button');
+
+// Show clear button when the user starts typing
+searchInput.addEventListener('input', () => {
+    if (searchInput.value.length > 0) {
+        clearButton.style.display = 'block'; // Show the clear button
+    } else {
+        clearButton.style.display = 'none'; // Hide the clear button
+    }
+
+    // Show/hide suggestions
+    if (searchInput.value.length > 0) {
+        suggestionsContainer.style.display = 'block'; // Show suggestions
+    } else {
+        suggestionsContainer.style.display = 'none'; // Hide suggestions
+    }
+});
+
+// Clear the search input when the clear button is clicked
+function clearSearchInput() {
+    searchInput.value = '';
+    clearButton.style.display = 'none'; // Hide the clear button
+    suggestionsContainer.style.display = 'none'; // Hide suggestions
+}
+
+// Clear search input when the clear button is clicked
+clearButton.addEventListener('click', () => {
+    clearSearchInput();
+});
+
+// Clear the search input when the user clicks anywhere on the page (except the input or clear button)
+document.addEventListener('click', (event) => {
+    if (!searchInput.contains(event.target) && !clearButton.contains(event.target) && !suggestionsContainer.contains(event.target)) {
+        clearSearchInput();
+    }
+});
+
+
+// JavaScript to toggle the menu visibility on mobile
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+       // Set up an event listener to trigger when the user clicks anywhere on the page
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('audio-player');
+            
+            // Attempt to play the audio and unmute it
+            audio.play().then(function() {
+                audio.muted = false; // Unmute the audio after it's started playing
+            }).catch(function(error) {
+                console.log("Autoplay failed:", error);
+            });
+        });
+		
+		document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("trailerModal");
+    const closeButton = document.querySelector(".close");
+
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            modal.style.display = "none";
+            document.getElementById("trailerFrame").innerHTML = ""; // Stop video playback
+        });
+    }
+
+    // Close modal when clicking outside the content
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            document.getElementById("trailerFrame").innerHTML = ""; // Stop video playback
+        }
+    });
+});
+    // Get the button
+    var backToTopButton = document.getElementById("backToTop");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // When the user clicks the button, scroll to the top of the document
+    backToTopButton.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+</head>
+<body>
+
+
+<style>
+/* Suggestions Container */
+.suggestions-container {
+	font-family: 'Anton', sans-serif; 
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+    max-height: 300px; /* Limits height to enable scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f0f0f0;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.suggestions-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-poster {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .suggestions-container {
+        width: 90vh; /* Make it take up most of the screen */
+        transform: translateX(-40%); /* Center it */
+        max-width: 230px; /* Ensure it doesn't exceed the screen */
+    }
+
+    .suggestion-poster {
+        width: 50px;  /* Reduce size for smaller screens */
+        height: 70px;
+        margin-right: 8px; /* Slightly smaller spacing */
+        border-radius: 3px; /* Adjust border-radius */
+    }
+
+    .suggestion-title {
+        font-size: 12px; /* Adjust font size for better readability */
+    }
+
+    .suggestion-item {
+        padding: 6px; /* Reduce padding */
+    }
+}
+
+/* Suggestion Title */
+.suggestion-title {
+    font-size: 19px;
+    color: #333;
+    font-weight: 500;
+}
+
+.suggestion-title {
+    font-size: 16px; /* Default font size */
+}
+
+@media (max-width: 600px) {
+    .suggestion-title {
+        font-size: 12px; /* Smaller font size for mobile screens */
+    }
+}
+
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red; /* Bright color for visibility */
+    color: white;
+    border: none;
+    width: 50px; /* Equal width & height for circle */
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    text-align: center;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    z-index: 2000;
+}
+    .back-to-top:hover {
+        background-color: green; /* Darker color on hover */
+        transform: scale(1.1); /* Slightly enlarge the button */
+    }
+
+/* Search Results Styles */
+.search-results-container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.search-result-category {
+    margin-bottom: 30px;
+}
+
+.search-result-category h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Flexbox grid layout to handle auto-adjusting based on screen size */
+.search-result-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 items per row by default */
+    gap: 20px;
+}
+
+.search-result-item {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.search-result-item:hover {
+    transform: scale(1.05);
+}
+
+.search-result-item img {
+    width: 100%;
+    height: auto; /* Automatically adjust the height */
+    object-fit: cover;
+}
+
+.search-result-item .info {
+    padding: 5px 10px;
+    color: white;
+}
+
+.search-result-item .info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.search-result-item .info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.star-rating {
+    color: yellow;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #888;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+    .search-result-items {
+        grid-template-columns: repeat(5, 1fr); /* 5 items per row for tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .search-result-items {
+        grid-template-columns: repeat(4, 1fr); /* 4 items per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .search-result-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens (mobile portrait) */
+    }
+
+    .search-result-item img {
+        height: 200px; /* Reduce height for mobile */
+    }
+
+    .search-result-item .info h4 {
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+
+    .search-result-item .info p {
+        font-size: 12px; /* Reduce font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-result-item .info h4 {
+        font-size: 14px; /* Further reduce title font size for mobile */
+    }
+
+    .search-result-item .info p {
+        font-size: 10px; /* Further reduce release date font size for mobile */
+    }
+
+    .search-result-item img {
+        height: 150px; /* Further reduce image height for mobile */
+    }
+}
+
+.carousel-section {
+    padding: 20px;
+}
+
+.carousel-section h2 {
+    font-size: 24px;
+    color: #ffcc00;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-left: 30px;
+}
+
+/* Mobile View: Adjust for screens smaller than 768px */
+@media (max-width: 768px) {
+    .carousel-section h2 {
+        font-size: 16px; /* Slightly smaller font for mobile */
+        margin-left: auto; /* Auto margin for centering */
+        margin-right: auto; /* Auto margin for centering */
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.carousel .movie-item,
+.carousel .tv-show-item {
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    flex: 0 0 auto;
+    width: 200px; /* Default width */
+}
+
+/* Hover effect */
+.carousel .movie-item:hover,
+.carousel .tv-show-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.carousel .movie-item img,
+.carousel .tv-show-item img {
+    width: 100%;
+    height: 300px; /* Default height */
+    object-fit: cover; /* Ensures image is cropped properly while filling the space */
+	
+}
+
+/* Positioning the carousel container */
+.carousel-container {
+    position: relative;
+    overflow: hidden; /* Ensure the carousel does not overflow */
+}
+
+/* Mobile View: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .carousel .movie-item,
+    .carousel .tv-show-item {
+        width: 180px; /* Reduce width for better fit */
+    }
+
+    .carousel .movie-item img,
+    .carousel .tv-show-item img {
+        height: 180px; /* Adjust image height for mobile */
+    }
+
+    .carousel .movie-item .info h4,
+    .carousel .tv-show-item .info h4 {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .star-rating {
+        font-size: 14px; /* Smaller star rating font */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel .movie-item,
+    .carousel .tv-show-item {
+        width: 150px; /* Further reduce for very small screens */
+    }
+
+    .carousel .movie-item img,
+    .carousel .tv-show-item img {
+        height: 100%; /* Further reduce image height for smaller screens */
+    }
+
+    .carousel .movie-item .info h4,
+    .carousel .tv-show-item .info h4 {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+}
+
+/* Slider Controls (Position the buttons correctly) */
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Previous button (Left) */
+.slider-prev {
+    left: 10px; /* Position it on the left side */
+}
+
+/* Next button (Right) */
+.slider-next {
+    right: 10px; /* Position it on the right side */
+}
+
+/* Carousel items (Just for demonstration) */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+/* Hide horizontal scroll bar */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .slider-prev,
+    .slider-next {
+        display: none; /* Hides the buttons visually on mobile */
+    }
+}
+
+
+</style>
+<script>
+const apiKey = 'ea97a714a43a0e3481592c37d2c7178a';
+const baseUrl = 'https://api.themoviedb.org/3/';
+const searchBar = document.getElementById('search-bar');
+const suggestionsContainer = document.getElementById('suggestions-container');
+const searchButton = document.getElementById('search-button');
+
+// Fetch search suggestions
+async function fetchSearchSuggestions(query) {
+    if (!query) {
+        suggestionsContainer.style.display = 'none';
+        return;
+    }
+    const url = `${baseUrl}search/multi?api_key=${apiKey}&language=en-US&query=${query}&page=1`;
+    const res = await fetch(url);
+    const data = await res.json();
+    displaySuggestions(data.results);
+}
+
+// Display suggestions with movie poster and scrolling support
+function displaySuggestions(results) {
+    suggestionsContainer.innerHTML = '';
+    if (results.length > 0) {
+        results.forEach(result => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.classList.add('suggestion-item');
+
+            // Get poster path or use placeholder
+            const posterPath = result.poster_path 
+                ? `https://image.tmdb.org/t/p/w92${result.poster_path}` 
+                : 'https://via.placeholder.com/50x75?text=No+Image';
+
+            // Create poster image element
+            const posterImg = document.createElement('img');
+            posterImg.src = posterPath;
+            posterImg.alt = result.name || result.title;
+            posterImg.classList.add('suggestion-poster');
+
+            // Create title element
+            const titleElement = document.createElement('span');
+            titleElement.textContent = result.name || result.title;
+            titleElement.classList.add('suggestion-title');
+
+            // Append elements
+            suggestionItem.appendChild(posterImg);
+            suggestionItem.appendChild(titleElement);
+
+            // Event listener for suggestion selection
+            suggestionItem.addEventListener('click', () => {
+                // Check if it's a TV show or movie and redirect accordingly
+                if (result.media_type === 'movie') {
+                    window.location.href = `movie-library.html?id=${result.id}`; // Movie page
+                } else if (result.media_type === 'tv') {
+                    window.location.href = `tv-shows-library.html?id=${result.id}`; // TV show page
+                }
+
+                // Auto-clear the search bar
+                searchBar.value = '';
+                
+                // Hide suggestions container
+                suggestionsContainer.style.display = 'none';
+            });
+
+            suggestionsContainer.appendChild(suggestionItem);
+        });
+
+        // Show the container and make it scrollable if needed
+        suggestionsContainer.style.display = 'block';
+    } else {
+        suggestionsContainer.style.display = 'none';
+    }
+}
+
+// Handle search on Enter or button click
+function handleSearch() {
+    const query = searchBar.value.trim();
+    if (query) {
+        window.location.href = `result.html?query=${query}`;
+        searchBar.value = ''; // Clear search bar after search
+        suggestionsContainer.style.display = 'none'; // Hide suggestions
+    }
+}
+
+// Fetch suggestions on input
+searchBar.addEventListener('input', (e) => {
+    fetchSearchSuggestions(e.target.value);
+});
+
+// Handle search button click
+searchButton.addEventListener('click', handleSearch);
+
+// Handle Enter key press
+searchBar.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        handleSearch();
+    }
+});
+
+
+// Helper function to fetch data from the API
+async function fetchTrendingMovies() {
+    const url = `${baseUrl}trending/movie/day?api_key=${apiKey}&language=en-US`;
+    const res = await fetch(url);
+    if (!res.ok) {
+        throw new Error(`Error fetching data from ${url}`);
+    }
+    const data = await res.json();
+    return data.results;
+}
+
+// Helper function to fetch trending TV shows from API
+async function fetchTrendingTVShows(page = 1) {
+    try {
+        const response = await fetch(`https://api.themoviedb.org/3/trending/tv/day?api_key=${apiKey}&page=${page}`);
+        const data = await response.json();
+        return data.results || [];
+    } catch (error) {
+        console.error('Error fetching trending TV shows:', error);
+        return [];
+    }
+}
+
+// Display trending movies
+async function displayTrendingMovies() {
+    try {
+        const movies = await fetchTrendingMovies();
+        const trendingMoviesContainer = document.getElementById('trending-movies');
+
+        if (movies.length > 0) {
+            trendingMoviesContainer.innerHTML = ''; // Clear previous content
+            movies.forEach(movie => {
+                const movieItem = document.createElement('div');
+                movieItem.classList.add('movie-item');
+                movieItem.innerHTML = `
+                    <a href="movie-library.html?movieId=${movie.id}">
+                        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+                    </a>
+                    <div class="info">
+                        <a href="movie-library.html?movieId=${movie.id}"></a>
+                    </div>
+                `;
+                trendingMoviesContainer.appendChild(movieItem);
+            });
+        }
+    } catch (error) {
+        console.error('Error fetching trending movies:', error);
+    }
+}
+
+// Display trending TV shows
+async function displayTrendingTVShows() {
+    try {
+        const tvShows = await fetchTrendingTVShows();
+        const trendingTVShowsContainer = document.getElementById('trending-tv-shows');
+        trendingTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        if (tvShows.length > 0) {
+            tvShows.forEach(tvShow => {
+                const tvShowItem = document.createElement('div');
+                tvShowItem.classList.add('tv-show-item');
+                tvShowItem.innerHTML = `
+                    <a href="tv-shows-library.html?id=${tvShow.id}">
+                        <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                    </a>
+                    <div class="info">
+                        <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                    </div>
+                `;
+                trendingTVShowsContainer.appendChild(tvShowItem);
+            });
+        }
+    } catch (error) {
+        console.error('Error displaying trending TV shows:', error);
+    }
+}
+
+// Initialize trending movies and TV shows
+window.onload = () => {
+    displayTrendingMovies();
+    displayTrendingTVShows();
+    
+    // Set up daily auto-update for trending movies and TV shows
+    setInterval(() => {
+        displayTrendingMovies();
+        displayTrendingTVShows();
+    }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+};
+
+// Call the function to display trending TV shows
+displayTrendingTVShows();
+
+
+// Array of TMDb IDs for the trending Netflix movies
+const trendingNetflixMovieIds = [1254786, 1442440, 1261555, 997120, 893723, 1195430, 1242526, 777443, 539972, 493529]; // Replace with actual TMDb IDs
+
+// Array of TMDb IDs for the trending Netflix TV shows
+const trendingNetflixTVShowIds = [249042, 285084, 280890, 242054, 250312, 200709, 219246, 285205, 281678, 287131]; // Replace with actual TMDb TV show IDs
+
+// Function to fetch details of each movie or TV show by TMDb ID
+async function fetchDetailsById(id, type = 'movie') {
+    const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+}
+
+// Function to format the release date
+function formatReleaseDate(releaseDate) {
+    const date = new Date(releaseDate);
+    return date.toLocaleDateString(); // Customize the date format as needed
+}
+
+// Function to display star rating
+function getStarRating(rating) {
+    const stars = Math.round(rating / 2); // TMDb rating is out of 10, so divide by 2 to get stars out of 5
+    return '★'.repeat(stars) + '☆'.repeat(5 - stars);
+}
+
+// Function to display trending Netflix movies
+async function displayTrendingNetflixMovies() {
+    try {
+        const trendingNetflixMoviesContainer = document.getElementById('trending-netflix-movies');
+        trendingNetflixMoviesContainer.innerHTML = ''; // Clear previous content
+
+        for (const movieId of trendingNetflixMovieIds) {
+            const movie = await fetchDetailsById(movieId, 'movie');
+
+            const movieItem = document.createElement('div');
+            movieItem.classList.add('movie-item');
+            movieItem.innerHTML = `
+                <a href="movie-library.html?movieId=${movie.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+                </a>
+                <div class="info">
+                    <a href="movie-library.html?movieId=${movie.id}">
+                    </a>
+                </div>
+            `;
+            trendingNetflixMoviesContainer.appendChild(movieItem);
+        }
+    } catch (error) {
+        console.error('Error fetching trending Netflix movies:', error);
+    }
+}
+
+// Function to display trending Netflix TV shows
+async function displayTrendingNetflixTVShows() {
+    try {
+        const trendingNetflixTVShowsContainer = document.getElementById('trending-netflix-tv-shows');
+        trendingNetflixTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of trendingNetflixTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('movie-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}">
+                    </a>
+                </div>
+            `;
+            trendingNetflixTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching trending Netflix TV shows:', error);
+    }
+}
+
+// Call the function to display trending Netflix movies and TV shows
+displayTrendingNetflixMovies();
+displayTrendingNetflixTVShows();
+
+// Array of TMDb IDs for the top 10 HBO movies
+const topHboMovieIds = [1186532, 48171, 519182, 44603, 912649, 9532, 792307, 804150, 580489, 9358]; // Replace with actual TMDb IDs if necessary
+
+// Function to fetch details of each movie or TV show by TMDb ID
+async function fetchDetailsById(id, type = 'movie') {
+    const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch movie details for ID ${id}`);
+    }
+    const data = await response.json();
+    return data;
+}
+
+// Function to format the release date
+function formatReleaseDate(releaseDate) {
+    const date = new Date(releaseDate);
+    return date.toLocaleDateString(); // Customize the date format as needed
+}
+
+// Function to display star rating
+function getStarRating(rating) {
+    const stars = Math.round(rating / 2); // TMDb rating is out of 10, so divide by 2 to get stars out of 5
+    return '★'.repeat(stars) + '☆'.repeat(5 - stars);
+}
+
+// Function to display Top 10 Movies on HBO
+async function displayTopHboMovies() {
+    try {
+        const topHboMoviesContainer = document.getElementById('top-hbo-movies');
+        topHboMoviesContainer.innerHTML = ''; // Clear previous content
+
+        for (const movieId of topHboMovieIds) {
+            const movie = await fetchDetailsById(movieId, 'movie');
+
+            const movieItem = document.createElement('div');
+            movieItem.classList.add('movie-item');
+
+            // Check if poster_path exists to avoid errors
+            const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'default-poster.jpg';
+
+            movieItem.innerHTML = `
+                <a href="movie-library.html?movieId=${movie.id}">
+                    <img src="${posterUrl}" alt="${movie.title}">
+                </a>
+                <div class="info">
+                    <a href="movie-library.html?movieId=${movie.id}">
+                    </a>
+                </div>
+            `;
+            topHboMoviesContainer.appendChild(movieItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top HBO movies:', error);
+    }
+}
+
+// Call the function to display Top 10 Movies on HBO
+displayTopHboMovies();
+
+const topHboTvShowIds = [111803, 250307, 228878, 212907, 244628, 286269, 125282, 286287, 158596, 226706]; // Replace with actual TMDb IDs for HBO shows
+
+// Function to fetch details of each movie or TV show by TMDb ID
+async function fetchDetailsById(id, type = 'movie') {
+    const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch details for ID ${id}`);
+    }
+    const data = await response.json();
+    return data;
+}
+
+// Function to format the release date
+function formatReleaseDate(releaseDate) {
+    const date = new Date(releaseDate);
+    return date.toLocaleDateString(); // Customize the date format as needed
+}
+
+// Function to display star rating
+function getStarRating(rating) {
+    const stars = Math.round(rating / 2); // TMDb rating is out of 10, so divide by 2 to get stars out of 5
+    return '★'.repeat(stars) + '☆'.repeat(5 - stars);
+}
+
+// Function to display Top 10 TV Shows on HBO
+async function displayTopHboTvShows() {
+    try {
+        const topHboTvShowsContainer = document.getElementById('top-hbo-tv-shows');
+        topHboTvShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of topHboTvShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv'); // Fetching TV show details
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('movie-item');
+
+            // Check if poster_path exists to avoid errors
+            const posterUrl = tvShow.poster_path ? `https://image.tmdb.org/t/p/w500${tvShow.poster_path}` : 'default-poster.jpg';
+
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="${posterUrl}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}">
+                    </a>
+                </div>
+            `;
+            topHboTvShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top HBO TV shows:', error);
+    }
+}
+
+// Call the function to display Top 10 TV Shows on HBO
+displayTopHboTvShows();
+
+// Array of TMDb IDs for the top 10 Disney movies
+const topDisneyMovieIds = [762509, 420818, 1241982, 2062, 774100, 11544, 408, 447273, 1022789, 38757]; // Replace with actual TMDb IDs
+
+// Array of TMDb IDs for the top 10 Disney TV shows
+const topDisneyTvShowIds = [202555, 1416, 207411, 1421, 226637, 456, 82728, 2004, 281371, 693]; // Replace with actual TMDb IDs
+
+// Function to fetch details of each movie or TV show by TMDb ID
+async function fetchDetailsById(id, type = 'movie') {
+    const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch details for ID ${id}`);
+    }
+    const data = await response.json();
+    return data;
+}
+
+// Function to format the release date
+function formatReleaseDate(releaseDate) {
+    const date = new Date(releaseDate);
+    return date.toLocaleDateString(); // Customize the date format as needed
+}
+
+// Function to display star rating
+function getStarRating(rating) {
+    const stars = Math.round(rating / 2); // TMDb rating is out of 10, so divide by 2 to get stars out of 5
+    return '★'.repeat(stars) + '☆'.repeat(5 - stars);
+}
+
+// Function to display Top 10 Movies on Disney
+async function displayTopDisneyMovies() {
+    try {
+        const topDisneyMoviesContainer = document.getElementById('top-disney-movies');
+        topDisneyMoviesContainer.innerHTML = ''; // Clear previous content
+
+        for (const movieId of topDisneyMovieIds) {
+            const movie = await fetchDetailsById(movieId, 'movie'); // Fetching Movie details
+
+            const movieItem = document.createElement('div');
+            movieItem.classList.add('movie-item');
+
+            // Check if poster_path exists to avoid errors
+            const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'default-poster.jpg';
+
+            movieItem.innerHTML = `
+                <a href="movie-library.html?movieId=${movie.id}">
+                    <img src="${posterUrl}" alt="${movie.title}">
+                </a>
+                <div class="info">
+                    <a href="movie-library.html?movieId=${movie.id}">
+                    </a>
+                </div>
+            `;
+            topDisneyMoviesContainer.appendChild(movieItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top Disney movies:', error);
+    }
+}
+
+// Function to display Top 10 TV Shows on Disney
+async function displayTopDisneyTvShows() {
+    try {
+        const topDisneyTvShowsContainer = document.getElementById('top-disney-tv-shows');
+        topDisneyTvShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of topDisneyTvShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv'); // Fetching TV show details
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('movie-item');
+
+            // Check if poster_path exists to avoid errors
+            const posterUrl = tvShow.poster_path ? `https://image.tmdb.org/t/p/w500${tvShow.poster_path}` : 'default-poster.jpg';
+
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="${posterUrl}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}">
+                    </a>
+                </div>
+            `;
+            topDisneyTvShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top Disney TV shows:', error);
+    }
+}
+
+// Call the function to display Top 10 Movies on Disney
+displayTopDisneyMovies();
+
+// Call the function to display Top 10 TV Shows on Disney
+displayTopDisneyTvShows();
+
+//top 10 Amazon Prime movies
+const topAmazonMovieIds = [257094, 1229730, 1145725, 980489, 15671, 814889, 617653, 1294203, 502356, 618588]; 
+//top 10 Amazon Prime TV shows
+const topAmazonTvShowIds = [108978, 71914, 95557, 243881, 153657, 16286, 258764, 262819, 66398, 84773];
+
+async function displayTopAmazonMovies() {
+    try {
+        const topAmazonMoviesContainer = document.getElementById('top-amazon-movies');
+        topAmazonMoviesContainer.innerHTML = ''; // Clear previous content
+
+        for (const movieId of topAmazonMovieIds) {
+            const movie = await fetchDetailsById(movieId, 'movie');
+
+            const movieItem = document.createElement('div');
+            movieItem.classList.add('movie-item');
+
+            const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'default-poster.jpg';
+
+            movieItem.innerHTML = `
+                <a href="movie-library.html?movieId=${movie.id}">
+                    <img src="${posterUrl}" alt="${movie.title}">
+                </a>
+                <div class="info">
+                    <a href="movie-library.html?movieId=${movie.id}">
+                    </a>
+                </div>
+            `;
+            topAmazonMoviesContainer.appendChild(movieItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top Amazon Prime movies:', error);
+    }
+}
+
+// Function to display Top 10 TV Shows on Amazon Prime
+async function displayTopAmazonTvShows() {
+    try {
+        const topAmazonTvShowsContainer = document.getElementById('top-amazon-tv-shows');
+        topAmazonTvShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of topAmazonTvShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('movie-item');
+
+            const posterUrl = tvShow.poster_path ? `https://image.tmdb.org/t/p/w500${tvShow.poster_path}` : 'default-poster.jpg';
+
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="${posterUrl}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}">
+                    </a>
+                </div>
+            `;
+            topAmazonTvShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top Amazon Prime TV shows:', error);
+    }
+}
+
+// Call functions to display Top 10 Movies and TV Shows on Amazon Prime
+displayTopAmazonMovies();
+displayTopAmazonTvShows();
+// Array of TMDb IDs for the top 10 Apple TV+ movies
+const topAppleMovieIds = [950396, 877817, 868759, 585511, 516486, 13956, 42536, 1029575, 466420, 522402]; // Replace with actual TMDb IDs
+
+// Array of TMDb IDs for the top 10 Apple TV+ TV shows
+const topAppleTvShowIds = [95396, 247767, 127641, 97546, 125988, 209876, 80752, 246381, 136311, 239362]; // Replace with actual TMDb IDs
+
+// Function to display Top 10 Movies on Apple TV+
+async function displayTopAppleMovies() {
+    try {
+        const topAppleMoviesContainer = document.getElementById('top-apple-movies');
+        topAppleMoviesContainer.innerHTML = ''; // Clear previous content
+
+        for (const movieId of topAppleMovieIds) {
+            const movie = await fetchDetailsById(movieId, 'movie');
+
+            const movieItem = document.createElement('div');
+            movieItem.classList.add('movie-item');
+
+            const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'default-poster.jpg';
+
+            movieItem.innerHTML = `
+                <a href="movie-library.html?movieId=${movie.id}">
+                    <img src="${posterUrl}" alt="${movie.title}">
+                </a>
+                <div class="info">
+                    <a href="movie-library.html?movieId=${movie.id}">
+                    </a>
+                </div>
+            `;
+            topAppleMoviesContainer.appendChild(movieItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top Apple TV+ movies:', error);
+    }
+}
+
+// Function to display Top 10 TV Shows on Apple TV+
+async function displayTopAppleTvShows() {
+    try {
+        const topAppleTvShowsContainer = document.getElementById('top-apple-tv-shows');
+        topAppleTvShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of topAppleTvShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('movie-item');
+
+            const posterUrl = tvShow.poster_path ? `https://image.tmdb.org/t/p/w500${tvShow.poster_path}` : 'default-poster.jpg';
+
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="${posterUrl}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}">
+                    </a>
+                </div>
+            `;
+            topAppleTvShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching top Apple TV+ TV shows:', error);
+    }
+}
+
+// Call functions to display Top 10 Movies and TV Shows on Apple TV+
+displayTopAppleMovies();
+displayTopAppleTvShows();
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const carouselContainers = document.querySelectorAll('.carousel-container');
+
+    carouselContainers.forEach(container => {
+      const carousel = container.querySelector('.carousel');
+      const prevBtn = container.querySelector('.slider-prev');
+      const nextBtn = container.querySelector('.slider-next');
+
+      const scrollAmount = 300; // Adjust scroll speed
+
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: -scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+
+</script>
+
+</body>
+</html>

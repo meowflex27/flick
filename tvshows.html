@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowflex - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+@font-face {
+    font-family: 'Firlest';
+    src: url('Firlest-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('LemonMilk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mouser O';
+    src: url('Mouser_o.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lemon Milk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Lemon Milk', cursive;
+  font-size: 30px;
+  color: #00FF00;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+nav .logo .logo-img {
+  height: 40px;
+}
+
+nav .logo .logo-text {
+  line-height: 1;
+}
+
+/* Mobile view (screen width less than 600px) */
+@media (max-width: 600px) {
+  nav .logo {
+    font-size: 18px; /* Smaller text */
+    gap: 5px; /* Slightly less space */
+  }
+
+  nav .logo .logo-img {
+    height: 28px; /* Smaller logo image */
+  }
+}
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+nav .search-bar-container {
+    position: relative;
+    width: 50%; /* Adjust width */
+}
+
+nav .search-bar {
+	font-family: 'Anton', sans-serif; 
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Existing search button styles */
+nav .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+nav .search-button img {
+    width: 30px;  /* Adjust the size of the icon */
+    height: 30px;
+}
+
+nav .search-button:hover {
+    background-color: #555;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    nav .search-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    nav .search-button img {
+        width: 18px;  /* Smaller icon size for mobile */
+        height: 18px;
+		margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .search-button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    nav .search-button img {
+        width: 20px;  /* Even smaller icon size for very small screens */
+        height: 20px;
+    }
+}
+
+
+.clear-button {
+    position: absolute;
+    right: 40px; /* Adjust based on the input field's size */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    display: none; /* Hidden by default */
+}
+
+.clear-button:hover {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    nav .search-bar-container {
+        width: 90%; /* Full width on mobile */
+        margin: 0 auto; /* Center the search bar */
+    }
+
+    nav .search-bar {
+        font-size: 12px; /* Reduce font size */
+        padding: 8px; /* Adjust padding */
+        width: 70%;
+		margin-left: 7px;
+		height: 12px;
+    }
+
+    nav .search-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    nav .clear-button {
+        font-size: 14px;
+    }
+}
+
+/* Default Desktop Navigation */
+nav .menu {
+    display: flex;
+    gap: 20px;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+	font-size: 20px;
+}
+
+.menu a:hover {
+    color: #00FF00; 
+	text-shadow: 2px 2px 0px black, -2px -2px 0px black, -2px 2px 0px black, 2px -2px 0px black;
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        font-size: 15px; /* Smaller font size for mobile */
+        padding: 10px; /* Adjust padding for better touch experience */
+    }
+}
+
+/* Burger Icon */
+nav .burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #00FF00;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    /* Hide menu items on mobile */
+    nav .menu {
+        display: none; /* Initially hide menu */
+        flex-direction: column; /* Stack the items vertically */
+        gap: 10px;
+        font-size: 14px;   
+
+    }	
+/* Hover effect */
+nav .menu a.hovered, nav .menu a:hover {
+  background-color: #007BFF; /* Blue on hover */
+  color: 
+}
+
+    /* Display the burger icon on mobile */
+    nav .burger {
+        display: block; /* Show the burger icon */
+		
+    }
+
+    /* When burger is clicked, show the menu */
+    nav.open .menu {
+        display: flex; /* Show the menu */
+    }
+}
+        .tv-show-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+/* For mobile view, with a max-width of 768px */
+@media (max-width: 768px) {
+
+    /* Make the burger icon visible */
+    nav .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Hide the menu by default */
+nav .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;  /* No space between items */
+    background-color: #0a0a0f;  /* Customize the color */
+    position: absolute;
+    top: 60px;  /* Adjust based on your top nav height */
+    right: 0;
+    width: 25%;
+    padding: 0;  /* Remove padding inside the menu */
+    z-index: 1000;
+	border-bottom-left-radius: 10px; 
+}
+
+    /* When the menu is active, show it */
+    nav .menu.active {
+        display: flex;
+    }
+
+
+    /* Adjust the search bar container size */
+    nav .search-bar-container {
+        width: 40%;
+    }
+
+    /* Style the links inside the menu */
+    nav .menu a {
+        text-decoration: none;
+        color: #ffcc00;
+        padding: 10px 20px;
+        display: block;
+        text-align: right;
+    }
+	@media screen and (max-width: 768px) {
+    nav .menu a {
+        padding: 10px 15px;
+    }
+
+  }
+}
+
+    </style>
+
+</head>
+<body>
+<nav>
+<div class="logo">
+  <img src="android-chrome-512x512.png" alt="Meowflex Logo" class="logo-img">
+  <span class="logo-text">Meowflex</span>
+</div>
+
+<div class="search-bar-container">
+    <input type="text" class="search-bar" id="search-bar" placeholder="Search movies, or TV shows...">
+    <button class="search-button" id="search-button">
+        <img src="search.png" alt="Search" class="search-icon">
+    </button>
+    <button class="clear-button" onclick="clearSearchInput()">×</button>
+    <div id="suggestions-container" class="suggestions-container"></div>
+</div>
+ <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="tvshows.html">TV Shows</a>
+			<a href="korean.html">Korean</a>
+			<a href="pmovies.html">Pinoy Movies</a>
+        </div>
+    </nav>
+<section aria-label="Hero" class="w-full">
+    <div id="hero-slider" class="relative w-full overflow-hidden">
+        <!-- Background images will be injected here -->
+    </div>
+</section>	
+<div class="carousel-section">
+    <h2>Trending</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="trending-tv-shows">
+            <!-- Trending TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('trending-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('trending-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Action</h2> <!-- Changed the heading to just "Action TV Shows" -->
+    <div class="carousel-container">
+        <div class="carousel" id="action-tv-shows">
+            <!-- Action TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('action-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('action-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<div class="carousel-section">
+    <h2>Comedy</h2> <!-- Changed the heading to "Comedy TV Shows" -->
+    <div class="carousel-container">
+        <div class="carousel" id="comedy-tv-shows">
+            <!-- Comedy TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('comedy-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('comedy-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Drama</h2> <!-- Changed the heading to "Drama TV Shows" -->
+    <div class="carousel-container">
+        <div class="carousel" id="drama-tv-shows">
+            <!-- Drama TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('drama-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('drama-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="carousel-section">
+    <h2>Romance</h2> <!-- Changed the heading to "Romance TV Shows" -->
+    <div class="carousel-container">
+        <div class="carousel" id="romance-tv-shows">
+            <!-- Romance TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('romance-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('romance-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+<div class="carousel-section">
+    <h2>Horror & Thriller TV Shows</h2> <!-- Heading for Horror & Thriller TV Shows -->
+    <div class="carousel-container">
+        <div class="carousel" id="horror-thriller-tv-shows">
+            <!-- Horror & Thriller TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('horror-thriller-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('horror-thriller-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-section">
+    <h2>Family TV Shows</h2> <!-- Heading for Family TV Shows -->
+    <div class="carousel-container">
+        <div class="carousel" id="family-tv-shows">
+            <!-- Family TV shows will be loaded here via JavaScript -->
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" onclick="moveCarousel('family-tv-shows', -1)">&#10094;</button>
+            <button class="slider-next" onclick="moveCarousel('family-tv-shows', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+   <!-- Search Results Section -->
+    <div class="search-results-container" id="search-results">
+        <!-- Search results for Movies and TV Shows will be displayed here -->
+    </div>
+<button id="backToTop" class="back-to-top">↑ Top</button>
+<footer class="footer">
+  <div class="footer-icons">
+    <a href="index.html" class="footer-icon">
+      <i class="fas fa-home"></i> Home
+    </a>
+    <a href="movies.html" class="footer-icon">
+      <i class="fas fa-film"></i> Movies
+    </a>
+    <a href="tvshows.html" class="footer-icon">
+      <i class="fas fa-tv"></i> TV Shows
+    </a>
+  </div>
+</footer>
+
+<style>
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  color: #00FF00;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icon i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-icon:hover {
+  color: #ffcc00;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .footer-icons {
+    flex-direction: row; /* Align icons horizontally */
+    justify-content: space-around; /* Distribute icons evenly */
+    padding: 10px 0;
+  }
+
+  .footer-icon {
+    margin: 0 10px; /* Adjust margin for smaller devices */
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+
+  .footer-icon i {
+    font-size: 20px; /* Adjust icon size */
+  }
+}
+
+</style>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+
+const searchInput = document.getElementById('search-bar');
+const clearButton = document.querySelector('.clear-button');
+
+// Show clear button when the user starts typing
+searchInput.addEventListener('input', () => {
+    if (searchInput.value.length > 0) {
+        clearButton.style.display = 'block'; // Show the clear button
+    } else {
+        clearButton.style.display = 'none'; // Hide the clear button
+    }
+
+    // Show/hide suggestions
+    if (searchInput.value.length > 0) {
+        suggestionsContainer.style.display = 'block'; // Show suggestions
+    } else {
+        suggestionsContainer.style.display = 'none'; // Hide suggestions
+    }
+});
+
+// Clear the search input when the clear button is clicked
+function clearSearchInput() {
+    searchInput.value = '';
+    clearButton.style.display = 'none'; // Hide the clear button
+    suggestionsContainer.style.display = 'none'; // Hide suggestions
+}
+
+// Clear search input when the clear button is clicked
+clearButton.addEventListener('click', () => {
+    clearSearchInput();
+});
+
+// Clear the search input when the user clicks anywhere on the page (except the input or clear button)
+document.addEventListener('click', (event) => {
+    if (!searchInput.contains(event.target) && !clearButton.contains(event.target) && !suggestionsContainer.contains(event.target)) {
+        clearSearchInput();
+    }
+});
+
+
+// JavaScript to toggle the menu visibility on mobile
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+       // Set up an event listener to trigger when the user clicks anywhere on the page
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('audio-player');
+            
+            // Attempt to play the audio and unmute it
+            audio.play().then(function() {
+                audio.muted = false; // Unmute the audio after it's started playing
+            }).catch(function(error) {
+                console.log("Autoplay failed:", error);
+            });
+        });
+		
+		document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("trailerModal");
+    const closeButton = document.querySelector(".close");
+
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            modal.style.display = "none";
+            document.getElementById("trailerFrame").innerHTML = ""; // Stop video playback
+        });
+    }
+
+    // Close modal when clicking outside the content
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            document.getElementById("trailerFrame").innerHTML = ""; // Stop video playback
+        }
+    });
+});
+    // Get the button
+    var backToTopButton = document.getElementById("backToTop");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // When the user clicks the button, scroll to the top of the document
+    backToTopButton.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+</head>
+<body>
+
+
+<style>
+
+
+/* Suggestions Container */
+.suggestions-container {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+    max-height: 300px; /* Limits height to enable scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f0f0f0;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.suggestions-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-poster {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .suggestions-container {
+        width: 90vh; /* Make it take up most of the screen */
+        transform: translateX(-40%); /* Center it */
+        max-width: 260px; /* Ensure it doesn't exceed the screen */
+    }
+
+    .suggestion-poster {
+        width: 30px;  /* Reduce size for smaller screens */
+        height: 50px;
+        margin-right: 8px; /* Slightly smaller spacing */
+        border-radius: 3px; /* Adjust border-radius */
+    }
+
+    .suggestion-title {
+        font-size: 12px; /* Adjust font size for better readability */
+    }
+
+    .suggestion-item {
+        padding: 6px; /* Reduce padding */
+    }
+}
+
+/* Suggestion Title */
+.suggestion-title {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.suggestion-title {
+    font-size: 10px; /* Adjust font size for better fit */
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red; /* Bright color for visibility */
+    color: white;
+    border: none;
+    width: 50px; /* Equal width & height for circle */
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    text-align: center;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    z-index: 2000;
+}
+    .back-to-top:hover {
+        background-color: green; /* Darker color on hover */
+        transform: scale(1.1); /* Slightly enlarge the button */
+    }
+
+/* Search Results Styles */
+.search-results-container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.search-result-category {
+    margin-bottom: 30px;
+}
+
+.search-result-category h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Flexbox grid layout to handle auto-adjusting based on screen size */
+.search-result-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 items per row by default */
+    gap: 20px;
+}
+
+.search-result-item {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.search-result-item:hover {
+    transform: scale(1.05);
+}
+
+.search-result-item img {
+    width: 100%;
+    height: auto; /* Automatically adjust the height */
+    object-fit: cover;
+}
+
+.search-result-item .info {
+    padding: 5px 10px;
+    color: white;
+}
+
+.search-result-item .info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.search-result-item .info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.star-rating {
+    color: yellow;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #888;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+    .search-result-items {
+        grid-template-columns: repeat(5, 1fr); /* 5 items per row for tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .search-result-items {
+        grid-template-columns: repeat(4, 1fr); /* 4 items per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .search-result-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens (mobile portrait) */
+    }
+
+    .search-result-item img {
+        height: 200px; /* Reduce height for mobile */
+    }
+
+    .search-result-item .info h4 {
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+
+    .search-result-item .info p {
+        font-size: 12px; /* Reduce font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-result-item .info h4 {
+        font-size: 14px; /* Further reduce title font size for mobile */
+    }
+
+    .search-result-item .info p {
+        font-size: 10px; /* Further reduce release date font size for mobile */
+    }
+
+    .search-result-item img {
+        height: 150px; /* Further reduce image height for mobile */
+    }
+}
+
+.carousel-section {
+    padding: 20px;
+}
+
+.carousel-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffcc00;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-left: 30px;
+}
+
+/* Mobile View: Adjust for screens smaller than 768px */
+@media (max-width: 768px) {
+    .carousel-section h2 {
+        font-size: 18px; /* Slightly smaller font for mobile */
+        margin-left: 15px; /* Reduce left margin */
+    }
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.carousel .movie-item,
+.carousel .tv-show-item {
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    flex: 0 0 auto;
+    width: 200px; /* Default width */
+}
+
+/* Hover effect */
+.carousel .movie-item:hover,
+.carousel .tv-show-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.carousel .movie-item img,
+.carousel .tv-show-item img {
+    width: 100%;
+    height: 300px; /* Default height */
+    object-fit: cover; /* Ensures image is cropped properly while filling the space */
+	
+}
+
+/* Positioning the carousel container */
+.carousel-container {
+    position: relative;
+    overflow: hidden; /* Ensure the carousel does not overflow */
+}
+
+/* Mobile View: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .carousel .movie-item,
+    .carousel .tv-show-item {
+        width: 180px; /* Reduce width for better fit */
+    }
+
+    .carousel .movie-item img,
+    .carousel .tv-show-item img {
+        height: 220px; /* Adjust image height for mobile */
+    }
+
+    .carousel .movie-item .info h4,
+    .carousel .tv-show-item .info h4 {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .star-rating {
+        font-size: 14px; /* Smaller star rating font */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel .movie-item,
+    .carousel .tv-show-item {
+        width: 180px; /* Further reduce for very small screens */
+    }
+
+    .carousel .movie-item img,
+    .carousel .tv-show-item img {
+        height: 100%; /* Further reduce image height for smaller screens */
+    }
+
+    .carousel .movie-item .info h4,
+    .carousel .tv-show-item .info h4 {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+}
+
+
+/* Slider Controls (Position the buttons correctly) */
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Previous button (Left) */
+.slider-prev {
+    left: 10px; /* Position it on the left side */
+}
+
+/* Next button (Right) */
+.slider-next {
+    right: 10px; /* Position it on the right side */
+}
+
+/* Carousel items (Just for demonstration) */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+/* Hide horizontal scroll bar */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .slider-prev,
+    .slider-next {
+        display: none; /* Hides the buttons visually on mobile */
+    }
+}
+
+
+</style>
+<script>
+const apiKey = 'b26ab230212e09c8e24acfaaedeaaec5'; // Updated API Key
+const baseUrl = 'https://api.themoviedb.org/3/';
+const searchBar = document.getElementById('search-bar');
+const suggestionsContainer = document.getElementById('suggestions-container');
+const searchButton = document.getElementById('search-button');
+
+// Fetch search suggestions
+async function fetchSearchSuggestions(query) {
+    if (!query) {
+        suggestionsContainer.style.display = 'none';
+        return;
+    }
+    const url = `${baseUrl}search/multi?api_key=${apiKey}&language=en-US&query=${query}&page=1`;
+    const res = await fetch(url);
+    const data = await res.json();
+    displaySuggestions(data.results);
+}
+
+// Display suggestions with movie poster and scrolling support
+function displaySuggestions(results) {
+    suggestionsContainer.innerHTML = '';
+    if (results.length > 0) {
+        results.forEach(result => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.classList.add('suggestion-item');
+
+            // Get poster path or use placeholder
+            const posterPath = result.poster_path 
+                ? `https://image.tmdb.org/t/p/w92${result.poster_path}` 
+                : 'https://via.placeholder.com/50x75?text=No+Image';
+
+            // Create poster image element
+            const posterImg = document.createElement('img');
+            posterImg.src = posterPath;
+            posterImg.alt = result.name || result.title;
+            posterImg.classList.add('suggestion-poster');
+
+            // Create title element
+            const titleElement = document.createElement('span');
+            titleElement.textContent = result.name || result.title;
+            titleElement.classList.add('suggestion-title');
+
+            // Append elements
+            suggestionItem.appendChild(posterImg);
+            suggestionItem.appendChild(titleElement);
+
+            // Event listener for suggestion selection
+            suggestionItem.addEventListener('click', () => {
+                // Redirect to result page
+                window.location.href = `result.html?query=${result.name || result.title}`;
+
+                // Auto-clear the search bar
+                searchBar.value = '';
+                
+                // Hide suggestions container
+                suggestionsContainer.style.display = 'none';
+            });
+
+            suggestionsContainer.appendChild(suggestionItem);
+        });
+
+        // Show the container and make it scrollable if needed
+        suggestionsContainer.style.display = 'block';
+    } else {
+        suggestionsContainer.style.display = 'none';
+    }
+}
+
+// Handle search on Enter or button click
+function handleSearch() {
+    const query = searchBar.value.trim();
+    if (query) {
+        window.location.href = `result.html?query=${query}`;
+        searchBar.value = ''; // Clear search bar after search
+        suggestionsContainer.style.display = 'none'; // Hide suggestions
+    }
+}
+
+// Fetch suggestions on input
+searchBar.addEventListener('input', (e) => {
+    fetchSearchSuggestions(e.target.value);
+});
+
+// Handle search button click
+searchButton.addEventListener('click', handleSearch);
+
+// Handle Enter key press
+searchBar.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        handleSearch();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselContainers = document.querySelectorAll('.carousel-container');
+
+    carouselContainers.forEach(container => {
+        const carousel = container.querySelector('.carousel');
+        const prevBtn = container.querySelector('.slider-prev');
+        const nextBtn = container.querySelector('.slider-next');
+
+        const scrollAmount = 300; // Adjust scroll speed
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+// Carousel control function
+function moveCarousel(containerId, direction) {
+    const container = document.getElementById(containerId);
+    const scrollAmount = 300; // Amount to scroll on button click
+    container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
+
+// Function to fetch Trending TV Shows
+async function fetchTrendingTVShows() {
+    const url = `${baseUrl}trending/tv/week?api_key=${apiKey}&language=en-US`;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) {
+            console.error('Error fetching data from TMDb:', res.statusText);
+            return [];
+        }
+        const data = await res.json();
+        console.log('Fetched Trending TV Shows:', data); // Log the fetched data
+        return data.results.slice(0, 50); // Limit to 50 TV shows
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return [];
+    }
+}
+
+// Function to display Trending TV Shows
+async function displayTrendingTVShows(containerId) {
+    const tvShows = await fetchTrendingTVShows();
+    console.log('Trending TV Shows to be displayed:', tvShows); // Log the fetched TV shows
+
+    const tvShowContainer = document.getElementById(containerId);
+
+    if (tvShows.length > 0) {
+        tvShowContainer.innerHTML = ''; // Clear existing content
+        tvShows.forEach(tvShow => {
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            const posterUrl = tvShow.poster_path ? `https://image.tmdb.org/t/p/w500${tvShow.poster_path}` : 'path/to/placeholder/image.jpg'; // Fallback poster
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="${posterUrl}" alt="${tvShow.name}">
+                </a>
+            `;
+            tvShowContainer.appendChild(tvShowItem);
+        });
+    } else {
+        tvShowContainer.innerHTML = '<p>No trending TV shows found.</p>';
+    }
+}
+
+// Function to initialize and auto-update Trending TV Shows
+function initializeTrendingTVShows() {
+    // Initial display of trending TV shows
+    displayTrendingTVShows('trending-tv-shows');
+
+    // Set an interval to refresh the trending TV shows every 24 hours (86400000 ms)
+    setInterval(() => {
+        console.log('Updating Trending TV Shows...');
+        displayTrendingTVShows('trending-tv-shows'); // Re-fetch and display new trending TV shows
+    }, 86400000); // 24 hours in milliseconds
+}
+
+// Initialize the trending TV shows section
+window.onload = initializeTrendingTVShows;
+
+// Array of TMDb IDs for Action TV shows
+const actionTVShowIds = [202555, 108978, 127532, 95557, 71914, 1399, 79744, 100088, 85021, 202555, 1429, 
+						4614, 75219, 77109, 222766, 204082, 37854, 2288, 106379, 94605, 67178, 77169, 
+						94997, 44217, 247723, 129552, 44006, 215866, 95, 4613, 85937, 200709, 71912, 
+						220377, 84773, 95479, 113962, 71790, 1436, 4604, 4297, 225385, 90228, 49258, 
+						48866, 210916, 236235, 279182, 63333]; 
+
+// Function to fetch details by ID (needed for Action TV shows)
+async function fetchDetailsById(id, type) {
+    const url = `${baseUrl}${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+}
+
+// Function to get star rating (optional)
+function getStarRating(vote_average) {
+    return `${vote_average} / 10`;
+}
+
+// Function to format release date
+function formatReleaseDate(date) {
+    return new Date(date).toLocaleDateString();
+}
+
+// Function to display Action TV shows
+async function displayActionTVShows() {
+    try {
+        const actionTVShowsContainer = document.getElementById('action-tv-shows'); // Updated ID
+        actionTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of actionTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                </div>
+            `;
+            actionTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching Action TV shows:', error);
+    }
+}
+
+// Call the function to display Action TV shows
+displayActionTVShows();
+
+// Array of TMDb IDs for Comedy TV shows
+const comedyTVShowIds = [111803, 242054, 247767, 82782, 243360, 261363, 244623, 281009, 262819, 97546, 41956, 126027, 76331, 2316, 34307, 1418, 228878, 37680, 125935, 60625, 37854, 1668, 96580, 2710, 77169, 94951, 1421, 136311]; // Replace with actual Comedy TV show TMDb IDs
+
+// Function to fetch details by ID (needed for Comedy TV shows)
+async function fetchDetailsById(id, type) {
+    const url = `${baseUrl}${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+}
+
+// Function to display Comedy TV shows
+async function displayComedyTVShows() {
+    try {
+        const comedyTVShowsContainer = document.getElementById('comedy-tv-shows'); // Updated ID for Comedy
+        comedyTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of comedyTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                </div>
+            `;
+            comedyTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching Comedy TV shows:', error);
+    }
+}
+
+// Call the function to display Comedy TV shows
+displayComedyTVShows();
+
+// Array of TMDb IDs for Drama TV shows
+const dramaTVShowIds = [249042, 111803, 95396, 242054, 202555, 108978, 95557, 250307, 247767, 71914, 207411, 117488, 82782, 1399, 255570, 73586, 79744, 243360, 1396, 100088, 243217, 85021, 202555, 1416, 153657, 1405, 1429, 66732];
+
+// Function to fetch details by ID (needed for Drama TV shows)
+async function fetchDetailsById(id, type) {
+    const url = `${baseUrl}${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+}
+
+// Function to display Drama TV shows
+async function displayDramaTVShows() {
+    try {
+        const dramaTVShowsContainer = document.getElementById('drama-tv-shows'); // Updated ID for Drama
+        dramaTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of dramaTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                </div>
+            `;
+            dramaTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching Drama TV shows:', error);
+    }
+}
+
+// Call the function to display Drama TV shows
+displayDramaTVShows();
+
+// Function to get star rating
+function getStarRating(vote_average) {
+    return `${vote_average} / 10`;
+}
+
+// Function to format release date
+function formatReleaseDate(date) {
+    return new Date(date).toLocaleDateString();
+}
+
+// Array of TMDb IDs for Romance TV shows
+const romanceTVShowIds = [1416, 219246, 281009, 4588, 1418, 1668, 94997, 44217, 1421, 78191, 95, 56570, 1419, 91239, 1100, 65942, 62117, 18165, 81356, 1341, 693, 2691, 49258, 67136, 4550, 33907, 220542, 61865, 269];
+
+// Function to fetch details by ID (needed for Romance TV shows)
+async function fetchDetailsById(id, type) {
+    const url = `${baseUrl}${type}/${id}?api_key=${apiKey}&language=en-US`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+}
+
+// Function to display Romance TV shows
+async function displayRomanceTVShows() {
+    try {
+        const romanceTVShowsContainer = document.getElementById('romance-tv-shows'); // Updated ID for Romance
+        romanceTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of romanceTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                </div>
+            `;
+            romanceTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching Romance TV shows:', error);
+    }
+}
+
+// Call the function to display Romance TV shows
+displayRomanceTVShows();
+
+// Function to get star rating
+function getStarRating(vote_average) {
+    return `${vote_average} / 10`;
+}
+
+// Function to format release date
+function formatReleaseDate(date) {
+    return new Date(date).toLocaleDateString();
+}
+
+// Array of TMDb IDs for Horror & Thriller TV shows
+const horrorThrillerTVShowIds = [100088, 66732, 62286, 1622, 124364, 1413, 65942, 18165, 225634, 157239, 86848, 40008, 194583, 62286, 86831, 248982, 72844, 31132, 157004, 206586, 30191, 75191, 99966, 46786, 81354, 210213]; 
+
+// Function to display Horror & Thriller TV shows
+async function displayHorrorThrillerTVShows() {
+    try {
+        const horrorThrillerTVShowsContainer = document.getElementById('horror-thriller-tv-shows'); // Updated ID for Horror & Thriller
+        horrorThrillerTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of horrorThrillerTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                </div>
+            `;
+            horrorThrillerTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching Horror & Thriller TV shows:', error);
+    }
+}
+
+// Call the function to display Horror & Thriller TV shows
+displayHorrorThrillerTVShows();
+
+// Function to get star rating
+function getStarRating(vote_average) {
+    return `${vote_average} / 10`;
+}
+
+// Function to format release date
+function formatReleaseDate(date) {
+    return new Date(date).toLocaleDateString();
+}
+
+// Array of TMDb IDs for Family TV shows
+const familyTVShowIds = [2004, 231727, 4550, 1422, 82452, 114500, 387, 1558, 12848, 82728,
+    14929, 1777, 65334, 40075, 73223, 31132, 57243, 92782, 246, 103540,
+    37606, 63926, 93825, 1803, 67882];
+
+// Function to display Family TV shows
+async function displayFamilyTVShows() {
+    try {
+        const familyTVShowsContainer = document.getElementById('family-tv-shows'); // Updated ID for Family TV Shows
+        familyTVShowsContainer.innerHTML = ''; // Clear previous content
+
+        for (const tvShowId of familyTVShowIds) {
+            const tvShow = await fetchDetailsById(tvShowId, 'tv');
+
+            const tvShowItem = document.createElement('div');
+            tvShowItem.classList.add('tv-show-item');
+            tvShowItem.innerHTML = `
+                <a href="tv-shows-library.html?id=${tvShow.id}">
+                    <img src="https://image.tmdb.org/t/p/w500${tvShow.poster_path}" alt="${tvShow.name}">
+                </a>
+                <div class="info">
+                    <a href="tv-shows-library.html?id=${tvShow.id}"></a>
+                </div>
+            `;
+            familyTVShowsContainer.appendChild(tvShowItem);
+        }
+    } catch (error) {
+        console.error('Error fetching Family TV shows:', error);
+    }
+}
+
+// Call the function to display Family TV shows
+displayFamilyTVShows();
+
+// Function to get star rating
+function getStarRating(vote_average) {
+    return `${vote_average} / 10`;
+}
+
+// Function to format release date
+function formatReleaseDate(date) {
+    return new Date(date).toLocaleDateString();
+}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowflex - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+@font-face {
+    font-family: 'Firlest';
+    src: url('Firlest-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('LemonMilk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mouser O';
+    src: url('Mouser_o.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lemon Milk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Lemon Milk', cursive;
+  font-size: 30px;
+  color: #00FF00;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+nav .logo .logo-img {
+  height: 40px;
+}
+
+nav .logo .logo-text {
+  line-height: 1;
+}
+
+/* Mobile view (screen width less than 600px) */
+@media (max-width: 600px) {
+  nav .logo {
+    font-size: 18px; /* Smaller text */
+    gap: 5px; /* Slightly less space */
+  }
+
+  nav .logo .logo-img {
+    height: 28px; /* Smaller logo image */
+  }
+}
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+nav .search-bar-container {
+    position: relative;
+    width: 50%; /* Adjust width */
+}
+
+nav .search-bar {
+	font-family: 'Anton', sans-serif; 
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Existing search button styles */
+nav .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+nav .search-button img {
+    width: 30px;  /* Adjust the size of the icon */
+    height: 30px;
+}
+
+nav .search-button:hover {
+    background-color: #555;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    nav .search-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    nav .search-button img {
+        width: 18px;  /* Smaller icon size for mobile */
+        height: 18px;
+		margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .search-button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    nav .search-button img {
+        width: 20px;  /* Even smaller icon size for very small screens */
+        height: 20px;
+    }
+}
+
+
+.clear-button {
+    position: absolute;
+    right: 40px; /* Adjust based on the input field's size */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    display: none; /* Hidden by default */
+}
+
+.clear-button:hover {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    nav .search-bar-container {
+        width: 90%; /* Full width on mobile */
+        margin: 0 auto; /* Center the search bar */
+    }
+
+    nav .search-bar {
+        font-size: 12px; /* Reduce font size */
+        padding: 8px; /* Adjust padding */
+        width: 70%;
+		margin-left: 7px;
+		height: 12px;
+    }
+
+    nav .search-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    nav .clear-button {
+        font-size: 14px;
+    }
+}
+
+/* Default Desktop Navigation */
+nav .menu {
+    display: flex;
+    gap: 20px;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+	font-size: 20px;
+}
+
+.menu a:hover {
+    color: #00FF00; 
+	text-shadow: 2px 2px 0px black, -2px -2px 0px black, -2px 2px 0px black, 2px -2px 0px black;
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        font-size: 15px; /* Smaller font size for mobile */
+        padding: 10px; /* Adjust padding for better touch experience */
+    }
+}
+
+/* Burger Icon */
+nav .burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #00FF00;
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    /* Hide menu items on mobile */
+    nav .menu {
+        display: none; /* Initially hide menu */
+        flex-direction: column; /* Stack the items vertically */
+        gap: 10px;
+        font-size: 14px;   
+
+    }	
+/* Hover effect */
+nav .menu a.hovered, nav .menu a:hover {
+  background-color: #007BFF; /* Blue on hover */
+  color: 
+}
+
+    /* Display the burger icon on mobile */
+    nav .burger {
+        display: block; /* Show the burger icon */
+		
+    }
+
+    /* When burger is clicked, show the menu */
+    nav.open .menu {
+        display: flex; /* Show the menu */
+    }
+}
+        .tv-show-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+/* For mobile view, with a max-width of 768px */
+@media (max-width: 768px) {
+
+    /* Make the burger icon visible */
+    nav .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Hide the menu by default */
+nav .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;  /* No space between items */
+    background-color: #0a0a0f;  /* Customize the color */
+    position: absolute;
+    top: 60px;  /* Adjust based on your top nav height */
+    right: 0;
+    width: 25%;
+    padding: 0;  /* Remove padding inside the menu */
+    z-index: 1000;
+	border-bottom-left-radius: 10px; 
+}
+
+    /* When the menu is active, show it */
+    nav .menu.active {
+        display: flex;
+    }
+
+
+    /* Adjust the search bar container size */
+    nav .search-bar-container {
+        width: 40%;
+    }
+
+    /* Style the links inside the menu */
+    nav .menu a {
+        text-decoration: none;
+        color: #ffcc00;
+        padding: 10px 20px;
+        display: block;
+        text-align: right;
+    }
+	@media screen and (max-width: 768px) {
+    nav .menu a {
+        padding: 10px 15px;
+    }
+
+  }
+}
+
+    </style>
+</head>
+<body>
+<nav>
+<div class="logo">
+  <img src="android-chrome-512x512.png" alt="Meowflex Logo" class="logo-img">
+  <span class="logo-text">Meowflex</span>
+</div>
+
+<div class="search-bar-container">
+    <input type="text" class="search-bar" id="search-bar" placeholder="Search movies, or TV shows...">
+    <button class="search-button" id="search-button">
+        <img src="search.png" alt="Search" class="search-icon">
+    </button>
+    <button class="clear-button" onclick="clearSearchInput()">×</button>
+    <div id="suggestions-container" class="suggestions-container"></div>
+</div>
+ <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="tvshows.html">TV Shows</a>
+			<a href="korean.html">Korean</a>
+			<a href="pmovies.html">Pinoy Movies</a>
+        </div>
+    </nav>	
+</header>
+
+</head>
+<body>
+    <script>
+	
+	// JavaScript to toggle the menu visibility on mobile
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+</
+        // Set up an event listener to trigger when the user clicks anywhere on the page
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('audio-player');
+            
+            // Attempt to play the audio and unmute it
+            audio.play().then(function() {
+                audio.muted = false; // Unmute the audio after it's started playing
+            }).catch(function(error) {
+                console.log("Autoplay failed:", error);
+            });
+        });
+		
+		document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("trailerModal");
+    const closeButton = document.querySelector(".close");
+
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            modal.style.display = "none";
+            document.getElementById("trailerFrame").innerHTML = ""; // Stop video playback
+        });
+    }
+
+    // Close modal when clicking outside the content
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            document.getElementById("trailerFrame").innerHTML = ""; // Stop video playback
+        }
+    });
+});
+
+</script>
+
+<style>
+        .suggestions-container {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            border-radius: 5px;
+            display: none;
+            z-index: 10;
+        }
+
+        .suggestion-item {
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .suggestion-item:hover {
+            background-color: #444;
+        }
+.suggestions-container {
+    max-height: 300px; /* Limits height to enable scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.suggestions-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-poster {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+    .suggestion-poster {
+        width: 30px;  /* Reduce size for smaller screens */
+        height: 50px;
+        margin-right: 8px; /* Slightly smaller spacing */
+        border-radius: 3px; /* Adjust border-radius */
+    }
+}
+
+.suggestion-title {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .suggestions-container {
+        width: 90vh; /* Make it take up most of the screen */
+        transform: translateX(-40%); /* Center it */
+        max-width: 260px; /* Ensure it doesn't exceed the screen 
+    }
+}
+    .suggestion-title {
+        font-size: 10; /* Adjust font size for better fit */
+    }
+
+    .suggestion-item {
+        padding: 6px; /* Reduce padding */
+    }
+}
+
+</style>
+<script>
+const apiKey = "ea97a714a43a0e3481592c37d2c7178a";
+const urlParams = new URLSearchParams(window.location.search);
+const movieId = urlParams.get("id") || urlParams.get("movieId"); // Supports both 'id' and 'movieId'
+const baseUrl = "https://api.themoviedb.org/3/";
+const searchBar = document.getElementById('search-bar');
+const suggestionsContainer = document.getElementById('suggestions-container');
+const searchButton = document.getElementById('search-button');
+
+console.log("Extracted Movie ID:", movieId);
+
+if (!movieId) {
+    console.error("No movie ID found in URL");
+}
+
+
+// Fetch search suggestions
+async function fetchSearchSuggestions(query) {
+    if (!query) {
+        suggestionsContainer.style.display = 'none';
+        return;
+    }
+    const url = `${baseUrl}search/multi?api_key=${apiKey}&language=en-US&query=${query}&page=1`;
+    const res = await fetch(url);
+    const data = await res.json();
+    displaySuggestions(data.results);
+}
+
+// Display suggestions with movie poster and scrolling support
+function displaySuggestions(results) {
+    suggestionsContainer.innerHTML = '';
+    if (results.length > 0) {
+        results.forEach(result => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.classList.add('suggestion-item');
+
+            // Get poster path or use placeholder
+            const posterPath = result.poster_path 
+                ? `https://image.tmdb.org/t/p/w92${result.poster_path}` 
+                : 'https://via.placeholder.com/50x75?text=No+Image';
+
+            // Create poster image element
+            const posterImg = document.createElement('img');
+            posterImg.src = posterPath;
+            posterImg.alt = result.name || result.title;
+            posterImg.classList.add('suggestion-poster');
+
+            // Create title element
+            const titleElement = document.createElement('span');
+            titleElement.textContent = result.name || result.title;
+            titleElement.classList.add('suggestion-title');
+
+            // Append elements
+            suggestionItem.appendChild(posterImg);
+            suggestionItem.appendChild(titleElement);
+
+            // Event listener for suggestion selection
+            suggestionItem.addEventListener('click', () => {
+                // Redirect to result page
+                window.location.href = `result.html?query=${result.name || result.title}`;
+
+                // Auto-clear the search bar
+                searchBar.value = '';
+                
+                // Hide suggestions container
+                suggestionsContainer.style.display = 'none';
+            });
+
+            suggestionsContainer.appendChild(suggestionItem);
+        });
+
+        // Show the container and make it scrollable if needed
+        suggestionsContainer.style.display = 'block';
+    } else {
+        suggestionsContainer.style.display = 'none';
+    }
+}
+
+// Handle search on Enter or button click
+function handleSearch() {
+    const query = searchBar.value.trim();
+    if (query) {
+        window.location.href = `result.html?query=${query}`;
+        searchBar.value = ''; // Clear search bar after search
+        suggestionsContainer.style.display = 'none'; // Hide suggestions
+    }
+}
+
+// Fetch suggestions on input
+searchBar.addEventListener('input', (e) => {
+    fetchSearchSuggestions(e.target.value);
+});
+
+// Handle search button click
+searchButton.addEventListener('click', handleSearch);
+
+// Handle Enter key press
+searchBar.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        handleSearch();
+    }
+});
+
+</script>
+<div class="modal-content">
+    <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+    <div class="dropdown-container">
+        <select id="seasonDropdown"></select>
+        <select id="episodeDropdown"></select>
+    </div>
+</div>
+
+<style>
+
+#videoPlayer {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive height for smaller screens */
+@media (max-width: 600px) {
+    #videoPlayer {
+        height: 300px;
+    }
+}
+
+
+    /* Dropdown Container */
+    .dropdown-container {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        margin: 20px 0; /* Spacing above and below */
+    }
+
+    /* Dropdown Styles */
+    select {
+        width: 20%; /* Width of the dropdown */
+        padding: 5px; /* Padding for better usability */
+        margin: 0 10px; /* Spacing between dropdowns */
+        font-size: 16px; /* Font size for the text */
+        border: 1px solid #ccc; /* Border for the dropdown */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #fff; /* White background */
+        color: #333; /* Text color */
+        appearance: none; /* Remove default dropdown arrow */
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="0,7 10,17 20,7" fill="%23333"/></svg>'); /* Custom dropdown arrow */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-position: right 10px center; /* Position the arrow */
+        background-size: 15px; /* Size of the arrow */
+        align-items: center; /* Center items within dropdown */
+        height: 35px;
+    }
+
+    /* Mobile View Styles */
+    @media (max-width: 600px) {
+        select {
+            width: 45%; /* Full width for mobile */
+            padding: 5px; /* Adjust padding for better usability */
+            font-size: 14px; /* Slightly smaller font size */
+            margin: 5px 0; /* Adjust margin for mobile */
+            height: 30px;
+        }
+
+        .dropdown-container {
+            flex-direction: row; /* Stack dropdowns vertically */
+            align-items: center; /* Center dropdowns */
+        }
+    }
+</style>
+
+<script>
+
+// Season and Episode Dropdown elements
+const seasonDropdown = document.getElementById('seasonDropdown');
+const episodeDropdown = document.getElementById('episodeDropdown');
+const videoPlayer = document.getElementById('videoPlayer');
+
+// Function to get URL parameters
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        type: params.get('type'),
+        id: params.get('id'),
+        season: params.get('season'),
+        episode: params.get('episode')
+    };
+}
+
+// Function to fetch movie or TV show details
+async function fetchDetails() {
+    const { type, id, season, episode } = getQueryParams();
+    const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}&append_to_response=credits`;
+    const response = await fetch(url);
+    const details = await response.json();
+
+    // Populate seasons and episodes for TV shows
+    if (type === 'tv') {
+        await populateSeasons(id, season, episode);
+    }
+
+    // Set video player URL based on the type
+    updateVideoPlayerUrl(type, id, season, episode);
+}
+
+// Function to update video player URL
+function updateVideoPlayerUrl(type, id, season, episode) {
+    if (type === 'tv' && season && episode) {
+        videoPlayer.src = `https://vidsrc.cc/v2/embed/tv/${id}/${season}/${episode}`;
+    } else if (type === 'tv' && !season && !episode) {
+        videoPlayer.src = `https://vidsrc.cc/v2/embed/tv/${id}`;
+    }
+}
+
+// Populate season dropdown
+async function populateSeasons(tvId, selectedSeason, selectedEpisode) {
+    const seasonsUrl = `https://api.themoviedb.org/3/tv/${tvId}?api_key=${apiKey}`;
+    const response = await fetch(seasonsUrl);
+    const tvDetails = await response.json();
+
+    // Clear previous options
+    seasonDropdown.innerHTML = '';
+
+    // Populate seasons dropdown
+    tvDetails.seasons.forEach(season => {
+        const option = document.createElement('option');
+        option.value = season.season_number;
+        option.textContent = `Season ${season.season_number}`;
+        if (season.season_number == selectedSeason) {
+            option.selected = true;
+        }
+        seasonDropdown.appendChild(option);
+    });
+
+    // Auto-select Season 1 if no season is specified
+    if (!selectedSeason) {
+        const defaultSeasonNumber = tvDetails.seasons[0].season_number;
+        seasonDropdown.value = defaultSeasonNumber; // Set to the first available season
+        await populateEpisodes(tvId, defaultSeasonNumber); // Populate episodes for that season
+    } else {
+        await populateEpisodes(tvId, selectedSeason, selectedEpisode);
+    }
+
+    // Add change event listener to the season dropdown
+    seasonDropdown.addEventListener('change', async () => {
+        const newSelectedSeason = seasonDropdown.value;
+        await populateEpisodes(tvId, newSelectedSeason); // Populate episodes for the newly selected season
+    });
+}
+
+// Populate episode dropdown
+async function populateEpisodes(tvId, seasonNumber, selectedEpisode) {
+    const episodesUrl = `https://api.themoviedb.org/3/tv/${tvId}/season/${seasonNumber}?api_key=${apiKey}`;
+    const response = await fetch(episodesUrl);
+    const seasonDetails = await response.json();
+
+    // Clear previous episode options
+    episodeDropdown.innerHTML = '';
+
+    // Populate episodes dropdown
+    seasonDetails.episodes.forEach(episode => {
+        const option = document.createElement('option');
+        option.value = episode.episode_number;
+        option.textContent = `Episode ${episode.episode_number} - ${episode.name}`;
+        if (episode.episode_number == selectedEpisode) {
+            option.selected = true;
+        }
+        episodeDropdown.appendChild(option);
+    });
+
+    // Automatically select the first episode if no specific episode is selected
+    if (!selectedEpisode) {
+        const firstEpisodeNumber = seasonDetails.episodes[0].episode_number;
+        episodeDropdown.value = firstEpisodeNumber; // Select the first episode
+        updateVideoPlayerUrl('tv', tvId, seasonNumber, firstEpisodeNumber); // Update the video player URL
+    }
+
+    // Set the episode in the video player on selection
+    episodeDropdown.addEventListener('change', () => {
+        const selectedEpisodeNumber = episodeDropdown.value;
+        updateVideoPlayerUrl('tv', tvId, seasonNumber, selectedEpisodeNumber); // Update video player URL
+    });
+
+    // If there's only one episode, set it as the selected episode and update video URL
+    if (seasonDetails.episodes.length === 1) {
+        episodeDropdown.value = seasonDetails.episodes[0].episode_number; // Select the only available episode
+        updateVideoPlayerUrl('tv', tvId, seasonNumber, episodeDropdown.value); // Update the video player URL
+    }
+}
+
+// Initialize fetching details on page load
+fetchDetails();
+</script>
+
+
+
+
+</body>
+</html>
